@@ -31,9 +31,12 @@
             document.getElementById("person").innerHTML =
             "Hello " + user + "!";
         } else {
+           let SessionNAME
+           let SessionID
            user = prompt("Please enter your name:","");
            if (user != "" && user != null) {
-               setCookie("username", user, 30);
+               setCookie("username", SessionNAME, 86)
+               document.cookie = "SessionID=43IDN-UE3J8-93HF3-NTIS2; expires=Thu, 17 Mar 2022 12:00:00 UTC"
            }
         }
     }
