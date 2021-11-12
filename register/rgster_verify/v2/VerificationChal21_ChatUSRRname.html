@@ -32,12 +32,14 @@
             "Hello " + user + "!";
         } else {
            let SessionNAME
-           let SessionID
+           let SessionBAN
            user = prompt("Please enter your name:","");
            if (user != "" && user != null) {
-               setCookie("username", SessionNAME, 86)
-               document.cookie = "SessionID=43IDN-UE3J8-93HF3-NTIS2; expires=Thu, 17 Mar 2022 12:00:00 UTC"
-           }
+               setCookie("username", SessionNAME, 2592000)
+           } else if (user == "gguest") {
+             setCookie("ggust_banned3days", SessionBAN, 259200)
+           } else if (user == "KnZahid" && user == "KnZahid300" && user == "Kn" && user == "Zahid" && user == "Zahid300") {
+             window.location.replace("https://ivchatoffical.github.io/bye_KnZahid300");
         }
     }
       checkCookie();
